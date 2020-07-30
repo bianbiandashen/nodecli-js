@@ -1,0 +1,82 @@
+{
+  "_args": [
+    [
+      "egg-hik-tracer@0.2.0",
+      "D:\\巡检\\Node端\\patrolengine-node"
+    ]
+  ],
+  "_from": "egg-hik-tracer@0.2.0",
+  "_id": "egg-hik-tracer@0.2.0",
+  "_inBundle": false,
+  "_integrity": "sha1-UeoAaUhnTXB2qzjOo/udkcb50iE=",
+  "_location": "/egg-hik-tracer",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "egg-hik-tracer@0.2.0",
+    "name": "egg-hik-tracer",
+    "escapedName": "egg-hik-tracer",
+    "rawSpec": "0.2.0",
+    "saveSpec": null,
+    "fetchSpec": "0.2.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "http://af.hikvision.com.cn:80/artifactory/api/npm/npm-down/egg-hik-tracer/-/egg-hik-tracer-0.2.0.tgz",
+  "_spec": "0.2.0",
+  "_where": "D:\\巡检\\Node端\\patrolengine-node",
+  "author": {
+    "name": "caoyunfei"
+  },
+  "bugs": {
+    "url": "https://github.com/eggjs/egg/issues"
+  },
+  "ci": {
+    "version": "8, 9"
+  },
+  "dependencies": {
+    "cls-hooked": "^4.2.2"
+  },
+  "description": "[![NPM version][npm-image]][npm-url]\r [![build status][travis-image]][travis-url]\r [![Test coverage][codecov-image]][codecov-url]\r [![David deps][david-image]][david-url]\r [![Known Vulnerabilities][snyk-image]][snyk-url]\r [![npm download][download-image]][download-url]",
+  "devDependencies": {
+    "autod": "^3.0.0",
+    "autod-egg": "^1.0.0",
+    "egg": "^2.0.0",
+    "egg-bin": "^4.3.0",
+    "egg-ci": "^1.8.0",
+    "egg-mock": "^3.13.0",
+    "eslint": "^4.11.0",
+    "eslint-config-egg": "^5.1.0",
+    "webstorm-disable-index": "^1.2.0"
+  },
+  "eggPlugin": {
+    "name": "hikTracer"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "homepage": "https://github.com/eggjs/egg-hik-tracer#readme",
+  "keywords": [
+    "egg",
+    "eggPlugin",
+    "egg-plugin"
+  ],
+  "license": "MIT",
+  "name": "egg-hik-tracer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eggjs/egg-hik-tracer.git"
+  },
+  "scripts": {
+    "autod": "autod",
+    "ci": "egg-bin pkgfiles --check && npm run lint && npm run cov",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "pkgfiles": "egg-bin pkgfiles",
+    "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
+    "test-local": "egg-bin test"
+  },
+  "version": "0.2.0"
+}

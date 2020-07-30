@@ -1,0 +1,48 @@
+{
+  "_from": "egg-hik-cas@^0.2.0",
+  "_id": "egg-hik-cas@0.2.0",
+  "_inBundle": false,
+  "_integrity": "sha1-dA+yQzM8Jc1HkC7u8ieysc2P2lc=",
+  "_location": "/egg-hik-cas",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "egg-hik-cas@^0.2.0",
+    "name": "egg-hik-cas",
+    "escapedName": "egg-hik-cas",
+    "rawSpec": "^0.2.0",
+    "saveSpec": null,
+    "fetchSpec": "^0.2.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "http://af.hikvision.com.cn:80/artifactory/api/npm/npm-down/egg-hik-cas/-/egg-hik-cas-0.2.0.tgz",
+  "_shasum": "740fb243333c25cd47902eeef227b2b1cd8fda57",
+  "_spec": "egg-hik-cas@^0.2.0",
+  "_where": "D:\\hen_test\\xfront-web",
+  "author": {
+    "name": "wukai6"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "path-to-regexp": "^2.4.0",
+    "query-string": "^6.2.0",
+    "url": "^0.11.0",
+    "xml2js": "^0.4.19"
+  },
+  "deprecated": false,
+  "description": "```\r exports.redis = {\r   enable: true,\r   package: 'egg-redis',\r };\r exports.sessionRedis = {\r   enable: true,\r   package: 'egg-session-redis',\r };\r exports.session = true;\r exports.hikcas = {\r   enable: true,\r   path: 'egg-hik-cas',\r };\r ```",
+  "eggPlugin": {
+    "name": "hikcas",
+    "dependencies": [
+      "session",
+      "redis"
+    ]
+  },
+  "license": "MIT",
+  "name": "egg-hik-cas",
+  "version": "0.2.0"
+}

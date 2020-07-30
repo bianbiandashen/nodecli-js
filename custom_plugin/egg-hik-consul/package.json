@@ -1,0 +1,87 @@
+{
+  "_from": "egg-hik-consul@^0.1.0",
+  "_id": "egg-hik-consul@0.1.0",
+  "_inBundle": false,
+  "_integrity": "sha1-71DSESnPUZu0IiNTdlmuNAUjw6Y=",
+  "_location": "/egg-hik-consul",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "egg-hik-consul@^0.1.0",
+    "name": "egg-hik-consul",
+    "escapedName": "egg-hik-consul",
+    "rawSpec": "^0.1.0",
+    "saveSpec": null,
+    "fetchSpec": "^0.1.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "http://af.hikvision.com.cn:80/artifactory/api/npm/npm-down/egg-hik-consul/-/egg-hik-consul-0.1.0.tgz",
+  "_shasum": "ef50d21129cf519bb42223537659ae340523c3a6",
+  "_spec": "egg-hik-consul@^0.1.0",
+  "_where": "D:\\hen_test\\xfront-web",
+  "author": {
+    "name": "caoyunfei"
+  },
+  "bugs": {
+    "url": "https://github.com/eggjs/egg/issues"
+  },
+  "bundleDependencies": false,
+  "ci": {
+    "version": "8, 9"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.2",
+    "consul": "^0.34.0",
+    "hikidentify": "^0.2.0",
+    "koa-router": "^7.4.0",
+    "loadbalance": "^0.3.2"
+  },
+  "deprecated": false,
+  "description": "[![NPM version][npm-image]][npm-url]\r [![build status][travis-image]][travis-url]\r [![Test coverage][codecov-image]][codecov-url]\r [![David deps][david-image]][david-url]\r [![Known Vulnerabilities][snyk-image]][snyk-url]\r [![npm download][download-image]][download-url]",
+  "devDependencies": {
+    "autod": "^3.0.0",
+    "autod-egg": "^1.0.0",
+    "egg": "^2.0.0",
+    "egg-bin": "^4.3.0",
+    "egg-ci": "^1.8.0",
+    "egg-mock": "^3.13.0",
+    "eslint": "^4.11.0",
+    "eslint-config-egg": "^5.1.0",
+    "webstorm-disable-index": "^1.2.0"
+  },
+  "eggPlugin": {
+    "name": "consul",
+    "dependencies": [
+      "schedule",
+      "hikLogger"
+    ]
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "homepage": "https://github.com/eggjs/egg-hik-consul#readme",
+  "keywords": [
+    "egg",
+    "eggPlugin",
+    "egg-plugin"
+  ],
+  "license": "MIT",
+  "name": "egg-hik-consul",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eggjs/egg-hik-consul.git"
+  },
+  "scripts": {
+    "autod": "autod",
+    "ci": "egg-bin pkgfiles --check && npm run lint && npm run cov",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "pkgfiles": "egg-bin pkgfiles",
+    "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
+    "test-local": "egg-bin test"
+  },
+  "version": "0.1.0"
+}

@@ -1,0 +1,43 @@
+{
+  "_from": "egg-ebg-config@^0.0.0",
+  "_id": "egg-ebg-config@^0.0.0",
+  "_inBundle": false,
+  "_location": "/egg-ebg-config",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "egg-ebg-config@^0.0.0",
+    "name": "egg-ebg-config",
+    "escapedName": "egg-ebg-config",
+    "rawSpec": "^0.0.0",
+    "saveSpec": null,
+    "fetchSpec": "^0.0.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "author": {
+    "name": "chenliang16"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "path-to-regexp": "^2.4.0",
+    "query-string": "^6.2.0",
+    "url": "^0.11.0",
+    "xml2js": "^0.4.19"
+  },
+  "deprecated": false,
+  "description": "",
+  "eggPlugin": {
+    "name": "hikStartup",
+    "dependencies": [
+      "session",
+      "redis"
+    ]
+  },
+  "license": "MIT",
+  "name": "egg-ebg-config",
+  "version": "0.0.0"
+}

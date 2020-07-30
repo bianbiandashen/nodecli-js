@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .container{
+      position: relative;
+      width: 1200px;
+      margin: 0 auto;
+    }
+    .report-title{
+      margin:15px auto;
+      width:100%;
+      text-algin:center;
+    }
+    .table{
+      width: 100%;
+      border: 1px solid #E0E0E0;
+      border-right: none;
+      border-bottom: none;
+      -webkit-box-sizing: content-box;
+      box-sizing: content-box;
+      font-size: 14px;
+    }
+    .table .cell{
+      position: relative;
+      overflow: hidden;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding-right: 12px;
+      padding-left: 12px;
+      line-height: 20px;
+      text-overflow: ellipsis;
+      vertical-align: middle;
+      white-space: normal;
+      word-break: break-all;
+      word-break: break-word;
+    }
+    .table th:not(:first-child)>.cell:after {
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 0;
+        width: 1px;
+        height: 16px;
+        margin-top: -8px;
+        background-color: #ccc;
+        content: "";
+    }
+    .table .cell .label {
+      overflow: hidden;
+      max-width: 100%;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .table tr{
+      border-top: 0;
+      border-left: 0;
+      background-color: #fff;
+    }
+    .table tr td.stripe {
+        background: rgba(0, 0, 0, 0.04);
+    }
+    .table th {
+      min-width: 0;
+      height: 36px;
+      overflow: hidden;
+      background-color: rgba(0,0,0,.08)!important;
+      color: #1a1a1a;
+      font-weight: 500;
+      text-align: left;
+      white-space: nowrap;
+    }
+    .table tr td{
+      border-bottom: 1px solid #E0E0E0;
+      border-right: 1px solid #E0E0E0;
+      background: rgba(255, 255, 255, 0);
+      position: relative;
+      min-width: 0;
+      height: 36px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 10px 0;
+      text-overflow: ellipsis;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="container-wrapper">
+      <h1 class="report-title">{{filename}}</h1>  
+      <div>
+        <table class="table" cellpadding="0" cellspacing="0">
+          <colgroup>
+            <col width="20%"></col>
+            <col width="30%"></col>
+            <col width="20%"></col>
+            <col width="30%"></col>
+          </colgroup>
+          <tr>
+            <td class="stripe">
+              <div class="cell">巡检区域</div>
+            </td>
+            <td colspan="3">
+              <div class="cell">{{regionName}}</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="stripe">
+              <div class="cell">报告生成时间</div>
+            </td>
+            <td>
+              <div class="cell">{{createTime}}</div>
+            </td>
+            <td class="stripe">
+              <div class="cell">巡检对象数量</div>
+            </td>
+            <td>
+              <div class="cell">{{objNum}}</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="stripe">
+              <div class="cell">问题总数</div>
+            </td>
+            <td>
+              <div class="cell">{{problemNum}}</div>
+            </td>
+            <td class="stripe">
+              <div class="cell">未整改问题数量</div>
+            </td>
+            <td>
+              <div class="cell">{{noRectifyProblemNum}}</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="stripe" colspan="4">
+              <div class="cell">巡检对象类型问题分布情况</div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="4">
+              <div class="cell">echarts柱状图，占位符</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div>问题清单</div>
+      <div>
+        <table class="table" cellpadding="0" cellspacing="0">
+          <tr>
+            <th>
+              <div class="cell"><div class="label">序号</div></div>
+            </th>
+            <th>
+              <div class="cell"><div class="label">巡检项-巡检内容</div></div>
+            </th>
+            <th>
+              <div class="cell"><div class="label">巡检对象</div></div>
+            </th>
+            <th>
+              <div class="cell"><div class="label">巡检人</div></div>
+            </th>
+            <th>
+              <div class="cell"><div class="label">巡检结论</div></div>
+            </th>
+            <th>
+              <div class="cell"><div class="label">备注</div></div>
+            </th>
+            <th>
+              <div class="cell"><div class="label">复核人</div></div>
+            </th>
+            <th>
+              <div class="cell"><div class="label">整改人</div></div>
+            </th>
+            <th>
+              <div class="cell"><div class="label">整改结论</div></div>
+            </th>
+            <th>
+              <div class="cell"><div class="label">审核人</div></div>
+            </th>
+          </tr>
+          {% for item in problemList %}
+          <tr>
+              <td><div class="cell">1</div></td>
+              <td><div class="cell">{{item.itemName}}</div></td>
+              <td><div class="cell">{{item.patrolObjName}}</div></td>
+              <td><div class="cell">{{item.execUserName}}</div></td>
+              <td><div class="cell">{{item.patrolResultTxt}}</div></td>
+              <td><div class="cell">{{item.resultDesc}}</div></td>
+              <td><div class="cell">{{item.reviewer}}</div></td>
+              <td><div class="cell">{{item.rectificator}}</div></td>
+              <td><div class="cell">{{item.rectificatRemark}}</div></td>
+              <td><div class="cell">{{item.auditor}}</div></td>
+          </tr>
+          {% else %}
+            <div class="cell">
+              <div class="no-data">暂无问题数据</div> 
+            </div>
+          {% endfor %}
+        </table>  
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+{
+  "_from": "egg-hik-operatelog",
+  "_id": "egg-hik-operatelog@1.0.1",
+  "_inBundle": false,
+  "_integrity": "sha1-RURv/CuSh5VGPtrMqsQfJaF+V54=",
+  "_location": "/egg-hik-operatelog",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "egg-hik-operatelog",
+    "name": "egg-hik-operatelog",
+    "escapedName": "egg-hik-operatelog",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "http://af.hikvision.com.cn:80/artifactory/api/npm/npm-down/egg-hik-operatelog/-/egg-hik-operatelog-1.0.1.tgz",
+  "_shasum": "45446ffc2b928795463edaccaac41f25a17e579e",
+  "_spec": "egg-hik-operatelog",
+  "_where": "D:\\巡检\\Node端\\patrolengine-node",
+  "author": {
+    "name": "caoyunfei"
+  },
+  "bugs": {
+    "url": "https://github.com/eggjs/egg/issues"
+  },
+  "bundleDependencies": false,
+  "ci": {
+    "version": "8, 9"
+  },
+  "deprecated": false,
+  "description": "[![NPM version][npm-image]][npm-url]\r [![build status][travis-image]][travis-url]\r [![Test coverage][codecov-image]][codecov-url]\r [![David deps][david-image]][david-url]\r [![Known Vulnerabilities][snyk-image]][snyk-url]\r [![npm download][download-image]][download-url]",
+  "devDependencies": {
+    "autod": "^3.0.0",
+    "autod-egg": "^1.0.0",
+    "egg": "^2.0.0",
+    "egg-bin": "^4.3.0",
+    "egg-ci": "^1.8.0",
+    "egg-mock": "^3.13.0",
+    "eslint": "^4.11.0",
+    "eslint-config-egg": "^5.1.0",
+    "webstorm-disable-index": "^1.2.0"
+  },
+  "eggPlugin": {
+    "name": "hikOperatelog",
+    "dependencies": [
+      "hikTracer"
+    ]
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "gitHead": "6047588ae8dfb7c36862db092c592da41cfbb607",
+  "homepage": "https://github.com/eggjs/egg-hik-operatelog#readme",
+  "keywords": [
+    "egg",
+    "eggPlugin",
+    "egg-plugin"
+  ],
+  "license": "MIT",
+  "name": "egg-hik-operatelog",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eggjs/egg-hik-operatelog.git"
+  },
+  "scripts": {
+    "autod": "autod",
+    "ci": "egg-bin pkgfiles --check && npm run lint && npm run cov",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "pkgfiles": "egg-bin pkgfiles",
+    "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
+    "test-local": "egg-bin test"
+  },
+  "version": "1.0.1"
+}

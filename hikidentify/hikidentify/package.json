@@ -1,0 +1,42 @@
+{
+  "_from": "hikidentify",
+  "_id": "hikidentify@1.0.3",
+  "_inBundle": false,
+  "_integrity": "sha1-Feet7d0+vt/3vWKqvZXTBtVX6EE=",
+  "_location": "/hikidentify",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "hikidentify",
+    "name": "hikidentify",
+    "escapedName": "hikidentify",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "http://af.hikvision.com.cn:80/artifactory/api/npm/npm-isms/hikidentify/-/hikidentify-1.0.3.tgz",
+  "_shasum": "15e7adeddd3ebedff7bd62aabd95d306d557e841",
+  "_spec": "hikidentify",
+  "_where": "D:\\WORK\\patrolengine\\patrolengine-frontend\\patrolengine-node",
+  "author": {
+    "name": "caoyunfei"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "",
+  "keywords": [
+    "identify"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "hikidentify",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.3"
+}

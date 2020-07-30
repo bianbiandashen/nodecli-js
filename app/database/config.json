@@ -1,0 +1,20 @@
+{
+  "development": {
+    "dialect": "postgres",
+    "database": "patrolengine_patrolengine-db",
+    "host": "10.13.69.221",
+    "port": "7092",
+    "username": "postgres",
+    "password": "lWLQ2aJm",
+    "timezone": "+08:00"
+  },
+  "production": {
+    "dialect": "postgres",
+    "database": "ptzds",
+    "host": "10.15.66.109",
+    "port": "5432",
+    "username": "postgres",
+    "password": "123456",
+    "timezone": "+08:00"
+  }
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <!-- 自动配置，只需指定实例名称，
+        type：类型，固定，定义同组件封装包中的installation.xml
+          -service: 后台服务标识
+          -database:  数据库，支持多数据库配置（目前支持pg,oracle和gis）
+          -cache: 缓存服务实例;
+          不支持自动配置mq，所以自己在properties标签里写
+        name：组件封装时定义的<段标识>，需要手动填写;
+        keyOrder：选择实例序号，不填默认为0，即第一个实例，超过填写范围则会出错;
+         -->
+    <instances>
+        <!-- 只需要写本服务用到的实例项，程序段是否存在以config.properties为准，不存在会打warn日志 -->
+        <instance type="service" name="xfront-web" />
+        <instance type="cache" name="xfrontcache"/>
+        <instance type="consul" name="xfrontconsul"/>
+        <!-- <instance type="minio" name="xxx"/>-->
+        <!-- <instance type="rabbitmq" name="xxx"/>-->
+         <instance type="cas" />
+     </instances>
+
+
+
+     <properties>
+         <!-- property自闭合标签用于指定config.properties与程序运行环境变量中属性的对应关系，一个property表情对应环境变量中的一个属性（targetKey）
+             sourceKey：指定config.properties中的key，可以用实际的key，也可以用{}表示实例列表中的key；
+             keyOrder：选择实例序号，不填默认为0，即第一个实例，超过填写范围则会出错；
+             targetKey：表示环境变量属性名，类似application.properties里的属性名称；
+             split：值分隔符，一般是英文逗号","，若不填则取全部；
+             index：取第几个值，不填则默认第一个，split填写的情况下才有效;
+             decrypt：是否需要解密，默认不需要 -->
+
+      <!--  <property targetKey="application.serverNode.indexCode" targetValue="{[hen-web.@instanceList].@indexCode}"/>-->
+
+
+    </properties>
+
+
+</config>

@@ -34,7 +34,7 @@
   "deprecated": false,
   "description": "Turn any flavor of allowable package.json bin into a normalized object",
   "devDependencies": {
-    "tap": "^14.10.2"
+    "tap": "^21.1.0"
   },
   "homepage": "https://github.com/npm/npm-normalize-package-bin#readme",
   "license": "ISC",
